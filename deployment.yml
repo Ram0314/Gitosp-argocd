@@ -19,7 +19,7 @@ spec:
         env: blue
     spec: 
       containers:
-        - name: cont1-blue
+        - name: cont1
           image: reddy0314/images:gamev2
           ports:
             - containerPort: 3000 
