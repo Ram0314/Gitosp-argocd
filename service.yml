@@ -6,6 +6,7 @@ spec:
   type: LoadBalancer
   selector:
     app: swiggy
+    env: green
   ports:
     - port: 3000
       targetPort: 3000
