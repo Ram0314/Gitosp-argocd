@@ -20,7 +20,7 @@ spec:
     spec: 
       containers:
         - name: cont1
-          image: reddy0314/images:gamev2
+          image: reddy0314/images:game
           ports:
             - containerPort: 3000 
           
