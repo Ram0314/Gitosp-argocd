@@ -1,0 +1,1 @@
+# Gitosp-argocd
