@@ -1,0 +1,26 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deploy-green
+  labels:
+    app: swiggy
+    env: green
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+       app: swiggy
+       env: green
+  template:
+    metadata:
+      labels:
+        app: swiggy
+        env: green
+    spec: 
+      containers:
+        - name: cont1
+          image: reddy0314/images:gamev2
+          ports:
+            - containerPort: 3000 
+          
